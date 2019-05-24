@@ -6,7 +6,38 @@
 
 ## DataStructure
 
+* Linked List
+
+* Stack
+
+* Queue
+
+* Binary Tree
+
+* Binary Search Tree
+
+* Trie
+
+* Heap
+
+* Hashing
+
 ## Algorithms
+
+### 排序
+
+* 快速排序
+
+* 归并排序
+
+* 桶排序
+
+### 图算法
+
+* 深度优先搜索
+
+* 广度优先搜索
+
 
 # May Reference
 
