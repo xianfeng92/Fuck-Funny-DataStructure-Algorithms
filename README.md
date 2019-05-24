@@ -10,7 +10,7 @@
 
 # May Reference
 
-* [interviews](https://github.com/kdn251/interviews) ---
+* [interviews](https://github.com/kdn251/interviews)
 
 * [数据结构与算法/leetcode/lintcode题解/](https://github.com/billryan/algorithm-exercise)
 
