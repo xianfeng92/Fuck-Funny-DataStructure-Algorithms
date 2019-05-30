@@ -3,7 +3,7 @@
 栈 (Stack)是一种后进先出(last in first out，LIFO)的数据结构，而队列(Queue)则是一种先进先出 (fisrt in first out，FIFO)的结构，
 如下图所示：
 
-![stackAndQueue]()
+![stackAndQueue](https://github.com/xianfeng92/Fuck-Funny-DataStructure-Algorithms/blob/master/images/stackAndQueue.png)
 
 ## 栈的实现
 
@@ -38,7 +38,7 @@ interface BaseStack<E> {
 
 Push方法，即向栈顶压入一个元素，首先保存原先的位于栈顶的元素，然后新建一个新的栈顶元素，最后将该元素的下一个指向原先的栈顶元素。整个过程如下所示：
 
-![Stack_push]()
+![Stack_push](https://github.com/xianfeng92/Fuck-Funny-DataStructure-Algorithms/blob/master/images/Stack_push.png)
 
 实现代码如所示：
 
@@ -55,7 +55,7 @@ Push方法，即向栈顶压入一个元素，首先保存原先的位于栈顶�
 
 Pop方法也很简单，首先保存栈顶元素的值，然后将栈顶元素设置为下一个元素：
 
-![Stack_pop]()
+![Stack_pop](https://github.com/xianfeng92/Fuck-Funny-DataStructure-Algorithms/blob/master/images/Stack_pop.png)
 
 实现代码如所示:
 
@@ -77,7 +77,7 @@ Pop方法也很简单，首先保存栈顶元素的值，然后将栈顶元素�
 
 使用数组来存储栈中的元素 Push 的时候，直接添加一个元素到S[N]，Pop 的时候直接返回S[N-1]。
 
-![StackImpByArray]()
+![StackImpByArray](https://github.com/xianfeng92/Fuck-Funny-DataStructure-Algorithms/blob/master/images/StackImpByArray.png)
 
 
 #### push 方法实现
