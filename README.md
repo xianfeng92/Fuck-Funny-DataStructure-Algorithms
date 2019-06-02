@@ -8,13 +8,11 @@
 
 * Linked List
 
-* Stack
+* [hashTable](https://github.com/xianfeng92/Fuck-Funny-DataStructure-Algorithms/blob/master/notes/hashTable.md)
 
-* Queue
+* [StackAndQueue](https://github.com/xianfeng92/Fuck-Funny-DataStructure-Algorithms/blob/master/notes/StackAndQueue.md)
 
-* Binary Tree
-
-* Binary Search Tree
+* [BinarySearchTree](https://github.com/xianfeng92/Fuck-Funny-DataStructure-Algorithms/blob/master/notes/BinarySearchTree.md)
 
 * Trie
 
