@@ -51,13 +51,13 @@
 完全二叉树（Complete Binary Tree）：深度为 h，有 n 个节点的二叉树，当且仅当其每一个节点都与深度为 h 的满二叉树中，序号为 1 
 至 n 的节点对应时，称之为完全二叉树。
 
-![completeBinaryTreeAndFullBinaryTree]()
+![completeBinaryTreeAndFullBinaryTree](https://github.com/xianfeng92/Fuck-Funny-DataStructure-Algorithms/blob/master/images/completeBinaryTreeAndFullBinaryTree.jpg)
 
 我们知道数组是将元素连续地排列在内存当中，而二叉树却不是采用连续的内存存放。实际上，通常 BinaryTree 类的实例仅包含根节点（Root Node）
 实例的引用，而根节点实例又分别指向它的左右孩子节点实例，以此类推。所以关键的不同之处在于，组成二叉树的节点对象实例可以分散到 CLR 托管堆中
 的任何位置，它们没有必要像数组元素那样连续的存放。
 
-![BinaryTreeMemory]()
+![BinaryTreeMemory](https://github.com/xianfeng92/Fuck-Funny-DataStructure-Algorithms/blob/master/images/BinaryTreeMemory.gif)
 
 如果要访问二叉树中的某一个节点，通常需要逐个遍历二叉树中的节点，来定位那个节点。它不像数组那样能对指定的节点进行直接的访问。
 所以查找二叉树的渐进时间复杂度是线性的 O(n)，在最坏的情况下需要查找树中所有的节点。也就是说，随着二叉树节点数量增加，查找任一节点的步骤
@@ -71,11 +71,11 @@
 
 如下图，这个是普通的二叉树：
 
-![Normal_BinaryTree]()
+![Normal_BinaryTree](https://github.com/xianfeng92/Fuck-Funny-DataStructure-Algorithms/blob/master/images/Normal_BinaryTree.png)
 
 在此基础上，加上节点之间的大小关系，就是二叉查找树：
 
-![BST]()
+![BST](https://github.com/xianfeng92/Fuck-Funny-DataStructure-Algorithms/blob/master/images/BST.png)
 
 二叉查找树（Binary Search Tree），也称有序二叉树（ordered binary tree）,排序二叉树（sorted binary tree），是指一棵空树或者
 具有下列性质的二叉树：
@@ -131,13 +131,13 @@ public class BST<E extends Comparable<E>> {
 定我们是移向左子树还是右子树。对于任意一种情况，一旦执行这一步，我们需要访问的节点数就减少了一半，从 15 降到了 7。同样，下一步访问的节
 点也减少了一半，从 7 降到了 3，以此类推。
 
-![demo_BST_Search]()
+![demo_BST_Search](https://github.com/xianfeng92/Fuck-Funny-DataStructure-Algorithms/blob/master/images/demo_BST_Search.gif)
 
 根据这一特点，查找算法的时间复杂度应该是 O(lg n)。而实际上，对于 BST 查找算法来说，其十分依赖于树中节点的拓扑结构，也就是节点间的布局关系。
 下图描绘了一个节点插入顺序为 20, 50, 90, 150, 175, 200 的 BST 树。这些节点是按照递升顺序被插入的，结果就是这棵树没有广度（Breadth）可言。
 也就是说，它的拓扑结构其实就是将节点排布在一条线上，而不是以扇形结构散开，所以查找时间也为 O(n)。
 
-![demo_BST_Search2]()
+![demo_BST_Search2](https://github.com/xianfeng92/Fuck-Funny-DataStructure-Algorithms/blob/master/images/demo_BST_Search2.gif)
 
 当 BST 树中的节点以扇形结构散开时，对它的插入、删除和查找操作最优的情况下可以达到亚线性的运行时间 O(log2n)。因为当在 BST 中查找一个节点时，
 每一步比较操作后都会将节点的数量减少一半。尽管如此，如果拓扑结构像上图中的样子时，运行时间就会退减到线性时间 O(n)。因为每一步比较操作后还是
@@ -213,7 +213,7 @@ __因此，BST 算法查找时间依赖于树的拓扑结构。最佳情况是 O
 
 随机插入形成树的动画如下，可以看到，插入的时候树还是能够保持近似平衡状态：
 
-![inset_BST_demo]()
+![inset_BST_demo](https://github.com/xianfeng92/Fuck-Funny-DataStructure-Algorithms/blob/master/images/inset_BST_demo.gif)
 
 
 __BST 的插入算法的复杂度与查找算法的复杂度是一样的：最佳情况是 O(log­2n)，而最坏情况是 O(n)。因为它们对节点的查找定位策略是相同的。__
@@ -232,11 +232,11 @@ __BST 的插入算法的复杂度与查找算法的复杂度是一样的：最�
 
 3. 如果被删除节点的右孩子有左孩子，就需要用被删除节点右孩子的左子树中的最下面的节点来替换它，就是说，我们用被删除节点的右子树中最小值的节点来替换。
 
-![BST_Delete]()
+![BST_Delete](https://github.com/xianfeng92/Fuck-Funny-DataStructure-Algorithms/blob/master/images/BST_Delete.gif)
 
 以上二叉查找树的删除节点的算法不是完美的，因为随着删除的进行，二叉树会变得不太平衡，下面是动画演示。
 
-![BST_Delete_Demo]()
+![BST_Delete_Demo](https://github.com/xianfeng92/Fuck-Funny-DataStructure-Algorithms/blob/master/images/BST_Delete_Demo.gif)
 
 和查找、插入算法类似，__删除算法的运行时间也与 BST 的拓扑结构有关，最佳情况是 O(lg­n)，而最坏情况是 O(n)。__
 
@@ -253,7 +253,7 @@ __BST 的插入算法的复杂度与查找算法的复杂度是一样的：最�
 
 这三种遍历方式都是从根节点开始，然后访问其子节点。区别在于遍历时，访问节点本身和其子节点的顺序不同。
 
-![traversal_BST]()
+![traversal_BST](https://github.com/xianfeng92/Fuck-Funny-DataStructure-Algorithms/blob/master/images/traversal_BST.gif)
 
 ### 前序遍历（Perorder traversal）
 
