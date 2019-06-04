@@ -14,7 +14,9 @@
 
 * [BinarySearchTree](https://github.com/xianfeng92/Fuck-Funny-DataStructure-Algorithms/blob/master/notes/BinarySearchTree.md)
 
-* [BalancedSearchTree](https://github.com/xianfeng92/Fuck-Funny-DataStructure-Algorithms/blob/master/notes/BalancedSearchTree.md)
+* [2-3 Tree](https://github.com/xianfeng92/Fuck-Funny-DataStructure-Algorithms/blob/master/notes/BalancedSearchTree.md)
+
+* Red-Black Tree
 
 * Heap
 
