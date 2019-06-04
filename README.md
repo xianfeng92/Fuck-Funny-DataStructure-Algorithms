@@ -14,11 +14,9 @@
 
 * [BinarySearchTree](https://github.com/xianfeng92/Fuck-Funny-DataStructure-Algorithms/blob/master/notes/BinarySearchTree.md)
 
-* Trie
+* [BalancedSearchTree](https://github.com/xianfeng92/Fuck-Funny-DataStructure-Algorithms/blob/master/notes/BalancedSearchTree.md)
 
 * Heap
-
-* Hashing
 
 ## Algorithms
 
