@@ -11,7 +11,7 @@
 
 * 黑链接: 表示2-3树中的普通链接
 
-![redblack-encoding]()
+![redblack-encoding](https://github.com/xianfeng92/Fuck-Funny-DataStructure-Algorithms/blob/master/images/redblack-encoding.png)
 
 这种表示方式带来的优点如下:
 
@@ -43,7 +43,7 @@
 
 通过这些结论,__可以发现红黑树即是二叉查找树,也是2-3树__。
 
-![redblack-1-1]()
+![redblack-1-1](https://github.com/xianfeng92/Fuck-Funny-DataStructure-Algorithms/blob/master/images/redblack-1-1.png)
 
 
 
@@ -52,7 +52,7 @@
 我们使用 boolean 类型的变量 color 来表示链接的颜色。如果指向它的链接为红色,则 color 变量为 true ,黑色则为 false (空链接也为黑色)。
 并且定义了一个 isRed() 函数用于判断链接的颜色。这里节点的__颜色指的是指向该节点的链接的颜色__。
 
-![redblack-color]()
+![redblack-color](https://github.com/xianfeng92/Fuck-Funny-DataStructure-Algorithms/blob/master/images/redblack-color.png)
 
 ```
     private static final boolean RED = true;
@@ -93,12 +93,12 @@
 假设当前有一条红色右链接需要被修正旋转为左链接,这个操作叫做左旋转。
 
 
-![redblack-left-rotate]()
+![redblack-left-rotate](https://github.com/xianfeng92/Fuck-Funny-DataStructure-Algorithms/blob/master/images/redblack-left-rotate.png)
 
 
 ### 右旋转
 
-![redblack-right-rotate]()
+![redblack-right-rotate](https://github.com/xianfeng92/Fuck-Funny-DataStructure-Algorithms/blob/master/images/redblack-right-rotate.png)
 
 
 ## 颜色转换
@@ -106,7 +106,7 @@
 颜色转换操作也是用于保证红黑树的性质的,它将父节点的颜色由黑变红,将子节点的颜色由红变黑。这项操作与旋转操作一样是局部变换, 
 不会影响整棵树的黑色平衡性.
 
-![color-flip]()
+![color-flip](https://github.com/xianfeng92/Fuck-Funny-DataStructure-Algorithms/blob/master/images/color-flip.png)
 
 __根节点总是为黑__
 
